@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -14,7 +14,7 @@
     </header>
 
     <main>
-        <form action="">
+        <form  id="formID">
             <legend>Book form</legend>
             <fieldset>
                 <div>
@@ -37,7 +37,11 @@
                     <input type="checkbox" value="read" id="status">
                 </div> 
             </fieldset>
+
+        <button type="submit" id="buttonID">Add to library</button>
+
         </form>
+
     </main>
 
     <footer>
