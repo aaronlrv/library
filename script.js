@@ -2,11 +2,13 @@ let myLibrary = [];
 
 document.getElementById("formID").addEventListener("submit", (e) => {
     e.preventDefault()
-
     let title = document.getElementById("book-name").value
     let author = document.getElementById("author-title").value
     let pages = document.getElementById("pages").value
-    let status = document.getElementById("status").value
+    let status = document.querySelector('input[name="status"]:checked').value;
+
+
+    console.log("New :" + status)
 
     let userBook = new book (title ,author , pages , status)
     myLibrary.push(userBook)
@@ -20,9 +22,11 @@ document.getElementById("formID").addEventListener("submit", (e) => {
     } 
     
     console.log(myLibrary)
-    
 
 });
+
+
+
 
 /*
     myLibrary.push(hobbit)
