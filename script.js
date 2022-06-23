@@ -1,4 +1,13 @@
 let myLibrary = [];
+let form = document.getElementById("formID")
+
+document.querySelector(".form-toggle").addEventListener("click", () =>{
+    form.classList.remove("hide")
+})
+
+document.querySelector(".form-close").addEventListener("click", () =>{
+    form.classList.add("hide")
+})
 
 document.getElementById("formID").addEventListener("submit", (e) => {
 
@@ -72,7 +81,6 @@ document.getElementById("formID").addEventListener("submit", (e) => {
                 jsPages.textContent = this.pages
                 remove.textContent = "Remove from Library"
                 readStatus.textContent = this.status
-
             }
         } 
 

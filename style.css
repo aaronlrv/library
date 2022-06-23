@@ -17,6 +17,11 @@ div {
     border: 1px solid blue;
 }
 
+
+.hide{
+    display: none;
+}
+
 .cards{
     width: 100%;
 }
@@ -89,3 +94,4 @@ h3{
     margin: 20px;
     text-align: center;
 }
+

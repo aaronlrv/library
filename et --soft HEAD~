@@ -1,0 +1,95 @@
+[33mcommit e660fad1891e806aff808e3cb4d37736328a4899[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: aaronlrv <aaronvitharanage@gmail.com>
+Date:   Thu Jun 23 21:10:12 2022 +0400
+
+    Allow multiple cards to be created through class function
+
+[33mcommit 31d39123ec32b9703c5e138b0b11057c4af2bc59[m
+Author: aaronlrv <aaronvitharanage@gmail.com>
+Date:   Thu Jun 23 18:53:57 2022 +0400
+
+    Change radio button value to allow read status to be displayed
+
+[33mcommit bd82df41c6dab7da5be8f55970c4bdabc1f6457b[m
+Author: aaronlrv <aaronvitharanage@gmail.com>
+Date:   Thu Jun 23 18:47:13 2022 +0400
+
+    Modify class function to allow multiple cards for multiple books
+
+[33mcommit 01c1f142138fefbb920d68d5a2113a2f948fb669[m
+Author: aaronlrv <aaronvitharanage@gmail.com>
+Date:   Thu Jun 23 18:06:15 2022 +0400
+
+    Rewrote constructor to allow users to have libary displayed on cards
+
+[33mcommit 37b212149db3ae5a7551fc229525262d7ffd994e[m
+Author: aaronlrv <aaronvitharanage@gmail.com>
+Date:   Thu Jun 23 17:31:40 2022 +0400
+
+    Style cards for book display
+
+[33mcommit b26bf2dd6aae4078d36ca9fba76cc60d49dec22b[m
+Author: aaronlrv <aaronvitharanage@gmail.com>
+Date:   Wed Jun 22 22:32:41 2022 +0400
+
+    Style initial card layout
+
+[33mcommit 8fcf923ec6e790006730008ff51c631dd5843de3[m
+Author: aaronlrv <aaronvitharanage@gmail.com>
+Date:   Wed Jun 22 22:19:11 2022 +0400
+
+    Add html structure for library cards
+
+[33mcommit e3350ce062fd3917223db1f487cfb5af61d432d4[m
+Author: aaronlrv <aaronvitharanage@gmail.com>
+Date:   Wed Jun 22 22:13:10 2022 +0400
+
+    Fix bug where status was always yes
+
+[33mcommit 43b7269e29d55e22cb99b61c48c55618ff347db1[m
+Author: aaronlrv <aaronvitharanage@gmail.com>
+Date:   Wed Jun 22 21:57:46 2022 +0400
+
+    Change checkboxes to radio buttons
+
+[33mcommit b44114b705c5838500cedf744f01197a9f44fc3a[m
+Author: aaronlrv <aaronvitharanage@gmail.com>
+Date:   Wed Jun 22 21:38:35 2022 +0400
+
+    Rewrote JS structure to grab user input and push to libary
+
+[33mcommit 94a3dd6bbb981b91b849151c94a772d8cffecf4a[m
+Author: aaronlrv <aaronvitharanage@gmail.com>
+Date:   Wed Jun 22 21:15:12 2022 +0400
+
+    Add event listener to grab form input
+
+[33mcommit 4bd3acf1d07f50708f56b7167587d701b5cfb902[m
+Author: aaronlrv <aaronvitharanage@gmail.com>
+Date:   Wed Jun 22 18:27:56 2022 +0400
+
+    Add basic form layout
+
+[33mcommit c97c522198cd24ea6e96e13810c634aaf9536fe5[m
+Author: aaronlrv <aaronvitharanage@gmail.com>
+Date:   Wed Jun 22 17:43:04 2022 +0400
+
+    Add function to push books into library array
+
+[33mcommit 252a6692a6ed9885035b13ee2d87ab863af7af48[m
+Author: aaronlrv <aaronvitharanage@gmail.com>
+Date:   Wed Jun 22 16:44:38 2022 +0400
+
+    Create function to store book details
+
+[33mcommit d85b44fee8e4e9426ae8d26d16c220f2330b9a12[m
+Author: aaronlrv <aaronvitharanage@gmail.com>
+Date:   Wed Jun 22 16:36:53 2022 +0400
+
+    Add skeleton files
+
+[33mcommit 93cb4be6795ff085da583ef2a3aa9ba7d10cc80d[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: aaronlrv <104592746+aaronlrv@users.noreply.github.com>
+Date:   Wed Jun 22 16:32:24 2022 +0400
+
+    Initial commit
