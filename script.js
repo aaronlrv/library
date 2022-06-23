@@ -7,9 +7,7 @@ document.getElementById("formID").addEventListener("submit", (e) => {
     let author = document.getElementById("author-title").value
     let pages = document.getElementById("pages").value
     let status = document.querySelector('input[name="status"]:checked').value;
-    let titleP = document.querySelector(".book-title")
-    let authorsP = document.querySelector(".authors-name")
-    let pagesP = document.querySelector (".js-pages")
+    let cardGrid = document.querySelector(".card-grid")
 
     class book {
 
@@ -21,10 +19,55 @@ document.getElementById("formID").addEventListener("submit", (e) => {
     }
     
             cardMaker () {
+                let div = document.createElement("div")
+                cardGrid.append(div)
+                div.classList.add("card")
+
+                let bookDiv = document.createElement("div")
+                div.append(bookDiv)
+                bookDiv.classList.add("book")
+
+                let cardHeading = document.createElement("div")
+                bookDiv.appendChild(cardHeading)
+                cardHeading.classList.add("card-heading")
+
+                let bookHeading = document.createElement("h3")
+                cardHeading.append(bookHeading)
+                bookHeading.classList.add("book-title")
+
+                let authorName = document.createElement("p")
+                cardHeading.append(authorName)
+                authorName.classList.add("authors-name")
+
+                let cardPages = document.createElement("div")
+                bookDiv.appendChild(cardPages)
+                cardPages.classList.add("card-pages")
+
+                let bookPages = document.createElement("p")
+                cardPages.append(bookPages)
+                bookPages.classList.add("book-pages")
+
+                let jsPages = document.createElement("p")
+                cardPages.append(jsPages)
+                jsPages.classList.add("js-pages")
+
+                let buttonDiv = document.createElement("div")
+                bookDiv.appendChild(buttonDiv)
+                buttonDiv.classList.add("buttons")
+
+                let remove = document.createElement("button")
+                buttonDiv.append(remove)
+                remove.classList.add("remove")
+
+
+
                 console.log("This Works!")
-                titleP.textContent = this.title 
-                authorsP.textContent = this.author
-                pagesP.textContent = this.pages
+                bookHeading.textContent = this.title 
+                authorName.textContent = this.author
+                bookPages.textContent = "Book Pages :"
+                jsPages.textContent = this.pages
+                remove.textContent = "Remove from Library"
+
             }
         } 
 
@@ -34,13 +77,36 @@ document.getElementById("formID").addEventListener("submit", (e) => {
     userBook.cardMaker()
     myLibrary.push(userBook)
 
-
-
-    
     console.log(myLibrary)
 
-
 });
+
+/*
+            <div class="card-grid">
+                <div class="card">
+                    <div class="book">
+                        <div class="card-heading"> 
+                        <h3 class="book-title">
+                            Example Title
+                        </h3>
+                        <p class="authors-name">
+                            By: AAron Lawrence
+                        </p>
+                    </div>
+                    <div class="card-pages">
+                        <p class="book-pages">Book Pages : </p>
+                        <p class="js-pages">32</p>
+                    </div>
+
+                    <div class="buttons">
+                        <button class="remove">Remove from Library</button>
+                    </div>
+                    
+                    </div>
+                </div>
+
+
+*/ 
 
 
 
