@@ -110,7 +110,19 @@ document.getElementById("formID").addEventListener("submit", (e) => {
         }
     })
 
+    let cards = document.querySelectorAll(".card")
+
+        cards.forEach((element, i)  => {
+                cards.dataset = i 
+                console.log("Data Attribute" + i)
+                console.log("Elements: " + element)   
+            
+    })
+    
+
 });
+    
+
 
 
 
