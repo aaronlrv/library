@@ -9,6 +9,7 @@ document.querySelector(".form-close").addEventListener("click", () =>{
     form.classList.add("hide")
 })
 
+
 document.getElementById("formID").addEventListener("submit", (e) => {
 
     e.preventDefault()
@@ -72,7 +73,11 @@ document.getElementById("formID").addEventListener("submit", (e) => {
 
                 let readStatus = document.createElement("p")
                 cardPages.append(readStatus)
-                readStatus.classList.add("js-pages")
+                readStatus.classList.add("read-status")
+
+                let readStatusBtn = document.createElement("button")
+                buttonDiv.append(readStatusBtn)
+                readStatusBtn.classList.add("change-status")
 
                 console.log("This Works!")
                 bookHeading.textContent = this.title 
@@ -80,17 +85,30 @@ document.getElementById("formID").addEventListener("submit", (e) => {
                 bookPages.textContent = "Book Pages :"
                 jsPages.textContent = this.pages
                 remove.textContent = "Remove from Library"
+                readStatusBtn.textContent = "Change Read Status"
                 readStatus.textContent = this.status
+
+
             }
         } 
 
-    
 
     let userBook = new book (title ,author , pages , status)
     userBook.cardMaker()
     myLibrary.push(userBook)
 
     console.log(myLibrary)
+
+    let readStatusBtn = document.querySelector(".change-status")
+    let readStatus = document.querySelector(".read-status")
+
+    readStatusBtn.addEventListener("click", () => {
+        if (readStatus.textContent === "Read"){
+            readStatus.textContent = "Not Read"
+        } else{
+            readStatus.textContent = "Read"
+        }
+    })
 
 });
 
