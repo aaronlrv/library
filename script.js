@@ -9,6 +9,8 @@ document.getElementById("formID").addEventListener("submit", (e) => {
     let status = document.querySelector('input[name="status"]:checked').value;
     let cardGrid = document.querySelector(".card-grid")
 
+    console.log(status)
+
     class book {
 
         constructor (title, author, pages, status) {
@@ -59,7 +61,9 @@ document.getElementById("formID").addEventListener("submit", (e) => {
                 buttonDiv.append(remove)
                 remove.classList.add("remove")
 
-
+                let readStatus = document.createElement("p")
+                cardPages.append(readStatus)
+                readStatus.classList.add("js-pages")
 
                 console.log("This Works!")
                 bookHeading.textContent = this.title 
@@ -67,6 +71,7 @@ document.getElementById("formID").addEventListener("submit", (e) => {
                 bookPages.textContent = "Book Pages :"
                 jsPages.textContent = this.pages
                 remove.textContent = "Remove from Library"
+                readStatus.textContent = this.status
 
             }
         } 
@@ -81,32 +86,7 @@ document.getElementById("formID").addEventListener("submit", (e) => {
 
 });
 
-/*
-            <div class="card-grid">
-                <div class="card">
-                    <div class="book">
-                        <div class="card-heading"> 
-                        <h3 class="book-title">
-                            Example Title
-                        </h3>
-                        <p class="authors-name">
-                            By: AAron Lawrence
-                        </p>
-                    </div>
-                    <div class="card-pages">
-                        <p class="book-pages">Book Pages : </p>
-                        <p class="js-pages">32</p>
-                    </div>
 
-                    <div class="buttons">
-                        <button class="remove">Remove from Library</button>
-                    </div>
-                    
-                    </div>
-                </div>
-
-
-*/ 
 
 
 
