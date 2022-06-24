@@ -103,6 +103,16 @@ document.getElementById("formID").addEventListener("submit", (e) => {
 
                 
                     });
+
+                    readStatusBtn.addEventListener("click", () => {
+                        if (readStatus.textContent === "Read"){
+                            console.log("ReadStatus is working!")
+                            readStatus.textContent = "Not Read"
+                        } else{
+                            readStatus.textContent = "Read"
+                        }
+                    })
+                    
                 
 
                           
@@ -118,15 +128,7 @@ document.getElementById("formID").addEventListener("submit", (e) => {
 
 
 
-    readStatusBtn.addEventListener("click", () => {
-        if (readStatus.textContent === "Read"){
-            console.log("ReadStatus is working!")
-            readStatus.textContent = "Not Read"
-        } else{
-            readStatus.textContent = "Read"
-        }
-    })
-    
+
 
 
 
