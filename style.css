@@ -2,8 +2,8 @@
     border-style: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Lato', sans-serif;
-
+    font-family: 'Inter', sans-serif;
+    background-color: #171717;
 }
 
 
@@ -17,7 +17,7 @@ main{
 }
 
 
-.hide{
+#hide{
     display: none;
 }
 
@@ -83,7 +83,7 @@ h3{
     box-shadow: 3px 3px 3px #444444;
 }
 
-#formID {
+.form-class {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,16 +93,27 @@ h3{
 fieldset{
     width: 600px;
     height: 250px;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
 }
 
 fieldset > div {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    background-color: white;
+}
+
+fieldset > div > label {
+    background-color: white;
 }
 
 input{
     width: 300px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 fieldset > div > * {
     display: flex;
@@ -114,6 +125,12 @@ fieldset > div > * {
 
 #status, #status2{
     width: 10px;
+}
+
+legend{
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 label{
@@ -144,6 +161,16 @@ label{
     align-items: center;
 }
 
+#buttonID {
+    height: 40px;
+    width: 100px;
+    background-color: #DA0037;
+    border-radius: 25px;
+    font-size: 10px;
+    color: #EDEDED;
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px #444444;
+}
 
 
 .remove, .change-status{
