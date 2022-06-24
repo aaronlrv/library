@@ -39,7 +39,18 @@ main{
     border: 3px solid black;
     margin-top: 45px;
     margin-left: 70px;
+    color: black;
+    background-color: #a2a2a2;
     
+}
+
+.card-heading, .card-pages, .buttons {
+    border-bottom: 1px solid black;
+}
+
+.book > * {
+    color: black;
+    background-color: #a2a2a2;
 }
 
 .card-heading{
@@ -48,6 +59,7 @@ main{
 
 .card-heading > * {
     margin: 20px;
+    background-color: #a2a2a2;
 }
 
 .card-pages{
@@ -56,6 +68,8 @@ main{
 
 .card-pages > * {
     margin: 10px;
+    background-color: #a2a2a2;
+
 }
 
 
@@ -148,6 +162,7 @@ label{
 .book-pages{
     font-size: 20px;
     font-weight: bold;
+    background-color: #a2a2a2;
 }
 
 .js-pages, .read-status{
@@ -159,6 +174,8 @@ label{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+    height: 150px;
 }
 
 #buttonID {
@@ -174,9 +191,13 @@ label{
 
 
 .remove, .change-status{
-    height: 30px;
-    width: 300px;
-    margin: 20px;
-    text-align: center;
+    height: 50px;
+    width: 175px;
+    background-color: #DA0037;
+    border-radius: 15px;
+    font-size: 15px;
+    color: #EDEDED;
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px #444444;
 }
 
