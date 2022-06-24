@@ -3,8 +3,8 @@
     padding: 0;
     margin: 0;
     font-family: 'Lato', sans-serif;
-}
 
+}
 
 
 
@@ -14,10 +14,6 @@ body,html{
 
 main{
     width: 100%;
-}
-
-div {
-    border: 1px solid blue;
 }
 
 
@@ -84,7 +80,45 @@ h3{
     font-size: 20px;
     color: #EDEDED;
     border: 1px solid black;
-    box-shadow: 5px 5px #EDEDED;
+    box-shadow: 3px 3px 3px #444444;
+}
+
+#formID {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset{
+    width: 600px;
+    height: 250px;
+}
+
+fieldset > div {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input{
+    width: 300px;
+}
+fieldset > div > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    
+}
+
+#status, #status2{
+    width: 10px;
+}
+
+label{
+    width: 150px;
+    display: inline-block
 }
 
 
