@@ -88,7 +88,24 @@ document.getElementById("formID").addEventListener("submit", (e) => {
                 readStatusBtn.textContent = "Change Read Status"
                 readStatus.textContent = this.status
 
+                let removal = cardGrid.querySelectorAll(".card")
 
+                removal.forEach((element, index) => { /// loops through each card
+                    let button = element.querySelector(".remove")  /// for each element finds the card
+                    button.addEventListener("click", (e) => { /// adds an event listener to the button it found on the card
+                        console.log("E.target :" + e.target)
+                        console.log(e)
+                        console.log(element)
+                        console.log( e.parentElement)
+                        console.log(element.parentElement)
+                        element.parentElement.removeChild(element)
+                    })
+
+                
+                    });
+                
+
+                          
             }
         } 
 
@@ -99,26 +116,20 @@ document.getElementById("formID").addEventListener("submit", (e) => {
 
     console.log(myLibrary)
 
-    let readStatusBtn = document.querySelector(".change-status")
-    let readStatus = document.querySelector(".read-status")
+
 
     readStatusBtn.addEventListener("click", () => {
         if (readStatus.textContent === "Read"){
+            console.log("ReadStatus is working!")
             readStatus.textContent = "Not Read"
         } else{
             readStatus.textContent = "Read"
         }
     })
-
-    let cards = document.querySelectorAll(".card")
-
-        cards.forEach((element, i)  => {
-                cards.dataset = i 
-                console.log("Data Attribute" + i)
-                console.log("Elements: " + element)   
-            
-    })
     
+
+
+
 
 });
     
