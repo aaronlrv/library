@@ -112,27 +112,15 @@ document.getElementById("formID").addEventListener("submit", (e) => {
                             readStatus.textContent = "Read"
                         }
                     })
-                    
-                
-
                           
             }
         } 
-
 
     let userBook = new book (title ,author , pages , status)
     userBook.cardMaker()
     myLibrary.push(userBook)
 
     console.log(myLibrary)
-
-
-
-
-
-
-
-
 });
     
 
